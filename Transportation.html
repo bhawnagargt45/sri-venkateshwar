@@ -1,0 +1,240 @@
+<html>
+
+    <head>
+        <title>TRANSPORTATION</title>
+        <style>
+            *{
+                font-family: Sofia Pro;
+                font-weight: 300;
+            }
+            body , ul , li{
+                margin: 0;
+                padding:0;                
+            }
+            p, li, h1, h2, h3, h4{
+                color: darkslategray;
+            }
+            body{
+               background-color: azure; 
+            }
+            .wrapper{
+                width: 96%;
+                margin:0 auto;
+                max-width: 1200px;
+                padding: 0 2%;
+            }
+             header{
+                background-color: papayawhip;
+                padding: 10px 0;
+            }
+            .logo{
+                margin: 0;
+                background: url(Images/mouse.png);
+                background-size: 70px 70px;
+                float: left;
+                width: 70px;
+                height:70px;
+            }
+            header nav{
+                float: right;
+            }
+            header:after{
+                content: "";
+                clear: both;
+                display: block; 
+            }
+            header nav li{
+                list-style-type: none;
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            header nav li a{
+                text-decoration: none;
+                color: darkslategray;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+            #main-banner img{
+                width: 100%;
+                max-height: 500px;
+                overflow:hidden;
+            }
+            #main-banner img{
+                width: 100%;
+            }
+            #slider{
+                overflow: hidden;
+            }
+            #slides{
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 18s slidy infinite;
+            }
+            #slides img{
+                width:20%;
+                float: left;
+            }
+            #usp{
+                margin-top: 60px;
+            }
+            #usp li{
+                float: left;
+                width: 23%;
+                padding: 1%;
+                text-align: center;
+                list-style-type: none;
+            }
+            #usp li img{
+                height: 80px;
+                padding: 20px;
+                background-color: dodgerblue;
+                border-radius: 50%
+            }
+            #usp li h2{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            #usp:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #products{
+                padding-top: 30px;
+                margin-top: 10px;
+                border-top: 2px solid coral;
+            }
+            #products li{
+                float: left;
+                width: 32%;
+                list-style-type: none;
+                text-align: center;
+            }
+            #products li img{
+                width: 100%;
+            }
+            #products li:nth-child(even){
+                margin: 0 1%
+            }
+            #products:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #our-products{
+                text-align: center;
+            }
+            footer{
+                width: 100%;
+                background-color: darkslategray;
+                padding: 30px 0;
+                margin-top: 60px;
+            }
+            footer ul{
+                float: left;
+                width: 48%;
+                margin: 1%;
+            }
+            footer ul h3{
+               font-size: 30px;
+                color: azure
+            }
+            footer ul li{
+                list-style-type: none;
+                font-size: 15px;
+                color: azure;
+            }
+            footer:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            
+            
+            /* Animation */
+            @keyframes slidy{
+                0% { left:0%; }
+                28%{ left:0%; }
+                33%{left: -100%;}
+                61%{left: -100%;} 
+                66%{left: -200%;}
+                94%{left: -200%;}
+                100%{left: 0%;}
+            }
+            
+            .greet{
+                background-color: #48C980;
+                font-family: fantasy;
+                font-size: 20px;
+                color: white;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center
+            }
+
+            .div-para{
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header Starts -->
+        <header>
+            <div class="wrapper">
+                <div class="logo"></div>
+                <nav>
+                     <ul>	
+                        <li><a href="Home.html">home</a></li>  
+                            	
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="Medication.html">Medication</a></li>
+                        <li><a href="Education.html">Education</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Ends -->
+        
+        <!-- Greet Section Starts -->
+        <div class="greet">
+         <h2> Transportation in 2050</h2>
+            <p id="namesec"></p>
+        </div>
+        
+        
+        <!-- Greet Section Ends -->
+        
+        
+        <!-- Banner Starts -->
+        <div id="main-banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="https://media.istockphoto.com/photos/front-view-of-selfdriving-passenger-drone-flying-in-the-sky-picture-id864542852?k=20&m=864542852&s=612x612&w=0&h=XWrka0zHcEvEcyKGRF30WkDBIfUBqYWurco0PI7ubf0=" alt="banner">
+                    <img src="https://blogs-images.forbes.com/jimdobson/files/2017/02/3D7123EC00000578-4241662-image-a-22_1487586045693.jpg" alt="banner">
+                    <img src="https://i.ytimg.com/vi/gZ5GzvPXrwA/maxresdefault.jpg" alt="banner">
+                </div>
+            </div>
+        </div>
+        <!-- Banner Ends -->
+       <p class="div-para"> The majority of vehicles on the road could be self-driving by 2050, according to enthusiasts for electric and autonomous cars. They believe technology, plus the push for cleaner air will be the incentive for big changes in the way we get from A to B. This is part of the BBC's Disruptors series.
+electric vehicles will outnumber gas-powered, which have been outlawed from city limits due to global warming. Because of new breakthroughs in making cars more intelligent, lighter and stronger, more people are choosing to commute longer distances than ever before.</p> 
+        
+       
+        
+        <!-- Footer Starts -->
+        <footer>
+            <div class="wrapper">
+                
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+    </body>
+</html>
